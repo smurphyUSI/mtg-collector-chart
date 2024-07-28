@@ -1,0 +1,241 @@
+body {
+     background-color: #f5f6f7;
+     padding: 0px;
+     margin: 0px;
+}
+.compDataTable {
+     table-layout: fixed;
+     border-collapse: collapse;
+     margin-left: auto;
+     margin-right: auto;
+     font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     border-right: 1px solid black;
+     border-bottom: 1px solid black;
+}
+.compDataTable .theader-corner {
+     border: none;
+}
+.compDataTable .theader-top {
+     position: relative;
+     height: 180px;
+     width: 45px;
+}
+.compDataTable .theader-top .rotated {
+     transform: translateX(-50%) translateY(-50%) rotate(90deg);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+}
+.compDataTable .tdata-title {
+     white-space: nowrap;
+}
+.compDataTable .tdata-title .cost-symbols {
+     display: inline-block;
+     padding-left: 4px;
+}
+.compDataTable .tdata-title img {
+     vertical-align: text-bottom;
+     height: 15px;
+     width: 15px;
+}
+.compDataTable th,
+.compDataTable td {
+     border: 1px solid black;
+     padding: 4px;
+     text-align: center;
+     font-weight: normal;
+}
+.compDataTable td a {
+     display: inline-block;
+     text-decoration: none;
+     color: #161616;
+}
+.compDataTable td a + a {
+     padding-left: 4px;
+}
+.compDataTable .blankcell {
+     border-style: dotted;
+}
+.compDataTable .inline-small {
+     height: 90px;
+}
+.compDataTable .inline-medium {
+     height: 180px;
+}
+.compDataTable th .end-section,
+.compDataTable td .end-section {
+     border-right: 2px solid black;
+}
+.compDataTable tbody tr:nth-child(odd) {
+     background: #dddddd;
+}
+.compDataTable tbody tr td:nth-of-type(1) {
+     text-align: left;
+}
+.compDataTable .theader-nonfoil {
+     font-weight: normal;
+}
+.compDataTable .theader-foil {
+     font-weight: bold;
+}
+.compDataTable .theader-etched {
+     text-decoration-line: underline;
+     text-decoration-style: wavy;
+     font-weight: normal;
+}
+.compDataTable .tdata-blank {
+     background-color: #dddddd;
+     border: none;
+}
+.compDataTable h1 {
+     text-align: left;
+     white-space: nowrap;
+     margin: 5px;
+}
+.compDataTable h1 img {
+     max-height: 20px;
+}
+.compDataTable h2 {
+     text-align: right;
+     margin: 5px;
+}
+.compDataTable .tdata-rarity {
+     font-size: 13px;
+}
+.compDataTable .tdata-rarity-mythic {
+     background-color: #cd7f32;
+}
+.compDataTable .tdata-rarity-rare {
+     background-color: gold;
+}
+.compDataTable .tdata-rarity-uncommon {
+     background-color: silver;
+}
+.compDataTable .tdata-rarity-common {
+     background-color: #f5f6f7;
+}
+
+
+.headerBox {
+     color: #fdfdfd;
+     background-color: #5f4f66;
+     padding: 0px;
+     margin: 0px 0px 15px 0px;
+}
+.headerBox #poweredBy {
+     text-align: right;
+     font-weight: bold;
+     padding: 5px;
+     margin: 0px;
+}
+.headerBox #poweredBy a {
+     color: #fdfdfd;
+     text-decoration: none;
+}
+
+.menuBox {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     margin-left: auto;
+     margin-right: auto;
+     width: 33vw;
+     padding-bottom: 15px;
+}
+.menuBox .compSearchBox input {
+     border-bottom: none;
+     font-size: 15px;
+     padding: 5px;
+     margin: 0px;
+}
+.menuBox .compOptionsMenu {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+     width: 100%;
+}
+.menuBox .searchList  {
+     position: fixed;
+     z-index: 10;
+     overflow: hidden;
+     background-color: #5f4f66;
+}
+.menuBox ul {
+     list-style-type: none;
+}
+.menuBox li {
+     cursor: pointer;
+     color: #dddddd;
+     padding: 0px;
+     margin: 5px;
+}
+
+
+
+
+.filterBox {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     margin-left: auto;
+     margin-right: auto;
+     width: 33vw;
+     padding-bottom: 15px;
+}
+.filterBox .compOptionsMenu {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+     width: 100%;
+}
+.filterBox #digitalInd a {
+     display: none;
+}
+
+.filterBox #digitalInd a {
+     color: #fdfdfd;
+     text-decoration: none;
+}
+
+.selectDropdown {
+     white-space: nowrap;
+}
+.compSelectMenu {
+     font-size: 15px;
+     color: #fdfdfd;
+     background-color: #5f4f66;
+     border-color: #fdfdfd;
+     border-style: solid;
+     border-radius: 5px;
+     padding: 5px;
+     margin: 0px;
+}
+
+.compButton {
+     width: 200%;
+     font-size: 15px;
+     color: #fdfdfd;
+     background-color: #5f4f66;
+     border-color: #fdfdfd;
+     border-style: solid;
+     border-radius: 5px;
+     padding: 5px;
+     margin: 0px;
+}
+
+
+#preview-window {
+     position: absolute;
+     z-index: 5;
+}
+
+@media print {
+     .headerBox,
+     .headerBox * {
+          display: none;
+     }
+     #preview-window {
+          display: none;
+     }
+}
