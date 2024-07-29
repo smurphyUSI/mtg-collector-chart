@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mtg-collector-chart/static/css/main.c4a06bfa.css",
+    "main.js": "/mtg-collector-chart/static/js/main.da61d9ea.js",
+    "static/js/453.f7696e9e.chunk.js": "/mtg-collector-chart/static/js/453.f7696e9e.chunk.js",
+    "index.html": "/mtg-collector-chart/index.html",
+    "main.c4a06bfa.css.map": "/mtg-collector-chart/static/css/main.c4a06bfa.css.map",
+    "main.da61d9ea.js.map": "/mtg-collector-chart/static/js/main.da61d9ea.js.map",
+    "453.f7696e9e.chunk.js.map": "/mtg-collector-chart/static/js/453.f7696e9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4a06bfa.css",
+    "static/js/main.da61d9ea.js"
+  ]
+}
