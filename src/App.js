@@ -223,7 +223,11 @@ function processCardData(rawCardData, symbolsList, setFiltersState, setState) {
                card.name = e.name;
                card.mana_cost = e.mana_cost;
                card.color_identity = e.color_identity.sort();
-               card.type = e.type_line;
+               if (e.type_line !== undefined) {
+                    card.type = e.type_line;
+               } else {
+                    card.type = "";
+               }
                card.rarity = e.rarity;
 
                // Pull symbols out of the mana cost
